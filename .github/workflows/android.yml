@@ -1,0 +1,39 @@
+...
+EOF-debug.apkh: app/build/outputs/apk/debug/
+EOF-debug.apkh: app/build/outputs/apk/debug/
+rm .github/workflows/android.yml
+
+cat > .github/workflows/android.yml <<'EOF'
+name: Build Xyna APK
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: Build Debug APK
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up JDK
+        uses: actions/setup-java@v3
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+
+      - name: Grant execute permission for gradlew
+        run: chmod +x ./gradlew
+
+      - name: Build APK with Gradle
+        run: ./gradlew assembleDebug
+
+      - name: Upload Debug APK
+        uses: actions/upload-artifact@v3
+        with:
+          name: xyna-debug-apk
+          path: app/build/outputs/apk/debug/app-debug.apk
