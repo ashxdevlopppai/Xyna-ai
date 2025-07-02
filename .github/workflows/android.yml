@@ -1,9 +1,3 @@
-...
-EOF-debug.apkh: app/build/outputs/apk/debug/
-EOF-debug.apkh: app/build/outputs/apk/debug/
-rm .github/workflows/android.yml
-
-cat > .github/workflows/android.yml <<'EOF'
 name: Build Xyna APK
 
 on:
@@ -32,7 +26,7 @@ jobs:
       - name: Build APK with Gradle
         run: ./gradlew assembleDebug
 
-      - name: Upload Debug APK
+      - name: Upload APK
         uses: actions/upload-artifact@v3
         with:
           name: xyna-debug-apk
