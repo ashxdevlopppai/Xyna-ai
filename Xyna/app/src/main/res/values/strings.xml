@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Jarvis AI</string>
+    
+    <!-- Input Related -->
+    <string name="input_hint">Type a message…</string>
+    <string name="mic_button_description">Voice input button</string>
+    <string name="send_button_description">Send message button</string>
+    <string name="settings_button_description">Open settings</string>
+    
+    <!-- Messages -->
+    <string name="error_api_key">OpenRouter API key not configured</string>
+    <string name="error_speech_not_supported">Speech recognition not supported on this device</string>
+    <string name="error_permission_denied">Required permissions not granted</string>
+    <string name="error_network">Network error occurred</string>
+    
+    <!-- Settings -->
+    <string name="settings_title">Settings</string>
+    <string name="settings_api_key">OpenRouter API Key</string>
+    <string name="settings_wake_word">Wake Word</string>
+    <string name="settings_language">Language</string>
+    <string name="settings_theme">Theme</string>
+    <string name="settings_notifications">Notifications</string>
+    <string name="settings_privacy">Privacy</string>
+    
+    <!-- Privacy -->
+    <string name="privacy_chat_analysis">Enable Chat Analysis</string>
+    <string name="privacy_location">Enable Location Services</string>
+    <string name="privacy_usage_stats">Enable Usage Statistics</string>
+    <string name="privacy_backup">Enable Cloud Backup</string>
+    
+    <!-- Notifications -->
+    <string name="notification_channel_name">Javris Assistant</string>
+    <string name="notification_channel_description">Notifications from your AI assistant</string>
+    
+    <!-- Actions -->
+    <string name="action_clear_chat">Clear Chat</string>
+    <string name="action_export_chat">Export Chat</string>
+    <string name="action_sign_in">Sign in with Google</string>
+    <string name="action_sign_out">Sign Out</string>
+    
+    <!-- Dialogs -->
+    <string name="dialog_clear_chat_title">Clear Chat History</string>
+    <string name="dialog_clear_chat_message">Are you sure you want to clear all chat history? This action cannot be undone.</string>
+    <string name="dialog_confirm">Confirm</string>
+    <string name="dialog_cancel">Cancel</string>
+    
+    <!-- Accessibility -->
+    <string name="accessibility_assistant_thinking">Assistant is thinking</string>
+    <string name="accessibility_listening">Listening for voice input</string>
+    
+    <!-- Voice Settings -->
+    <string name="voice_settings">Voice Settings</string>
+    <string name="select_language">Select Language</string>
+    <string name="select_voice">Select Voice</string>
+    <string name="speech_rate">Speech Rate</string>
+    <string name="pitch">Pitch</string>
+    <string name="test_voice">Test</string>
+    <string name="save">Save</string>
+    
+    <!-- Languages -->
+    <string name="language_en_us">English (US)</string>
+    <string name="language_en_uk">English (UK)</string>
+    <string name="language_en_in">English (India)</string>
+    <string name="language_hi">Hindi</string>
+    <string name="language_hinglish">Hinglish</string>
+    
+    <!-- Voice Feedback -->
+    <string name="voice_feedback_searching">Searching for %s</string>
+    <string name="voice_feedback_opening">Opening %s</string>
+    <string name="voice_feedback_sending">Sending message to %s</string>
+    <string name="voice_feedback_playing">Playing %s</string>
+    <string name="voice_feedback_setting">Setting %1$s to %2$s</string>
+    <string name="voice_feedback_error">Sorry, I encountered an error: %s</string>
+    
+    <!-- Voice Authentication -->
+    <string name="voice_enrollment_title">Voice Enrollment</string>
+    <string name="voice_enrollment_instructions">Please read the following text clearly:</string>
+    <string name="enrollment_sample_text">The quick brown fox jumps over the lazy dog. My voice is my password, verify me.</string>
+    <string name="enrollment_in_progress">Recording in progress: %d%%</string>
+    <string name="enrollment_success">Voice enrollment completed successfully!</string>
+    <string name="enrollment_failed">Enrollment failed: %s</string>
+    <string name="start_enrollment">Start Enrollment</string>
+    <string name="retry_enrollment">Retry Enrollment</string>
+    <string name="cancel_enrollment">Cancel</string>
+    <string name="voice_not_recognized">Voice not recognized. Please try again.</string>
+    <string name="voice_auth_required">Please authenticate your voice first.</string>
+    
+    <!-- Voice Authentication Rejection Messages -->
+    <string-array name="voice_rejection_messages">
+        <item>I don\'t recognize your voice. I only respond to my owner.</item>
+        <item>Nice try, but you\'re not my owner. I\'m loyal to them only.</item>
+        <item>Sorry, but I\'m exclusively bonded to my owner\'s voice.</item>
+        <item>Access denied. Your voice pattern doesn\'t match my owner\'s.</item>
+        <item>I\'m a loyal AI assistant. I only take commands from my owner.</item>
+        <item>Hmm... you sound different. I only chat with my registered owner.</item>
+        <item>Voice authentication failed. Are you trying to impersonate my owner?</item>
+        <item>Security is my priority. I only respond to my owner\'s voice.</item>
+        <item>Your voice isn\'t authorized. I\'m waiting for my owner.</item>
+        <item>Nice voice, but not the one I\'m trained to respond to.</item>
+    </string-array>
+
+    <!-- Welcome Screen -->
+    <string name="welcome_title">Welcome to Javris</string>
+    <string name="welcome_message">Your intelligent AI assistant that helps you with daily tasks, chats, and more!</string>
+    <string name="get_started">Get Started</string>
+    <string name="permissions_info">Javris needs a few permissions to help you better. We\'ll guide you through setting them up.</string>
+
+    <!-- Permissions -->
+    <string name="permission_required_title">Permissions Required</string>
+    <string name="permission_required_message">Javris needs access to certain features of your device to function properly. Please grant the required permissions to continue.</string>
+    <string name="permission_required_settings">Please grant the required permissions in Settings to use Javris.</string>
+    <string name="grant_permissions">Grant Permissions</string>
+    <string name="settings">Settings</string>
+    <string name="exit_app">Exit</string>
+
+    <!-- Accessibility -->
+    <string name="accessibility_required_title">Accessibility Service Required</string>
+    <string name="accessibility_required_message">Javris needs accessibility service to assist you with screen interactions. Please enable it in Settings.</string>
+    <string name="enable_accessibility">Enable</string>
+
+    <!-- Storage and Backup Settings -->
+    <string name="settings_backup">Backup &amp; Sync</string>
+    <string name="settings_gdrive_sync">Google Drive Sync</string>
+    <string name="settings_gdrive_sync_summary">Automatically backup your data to Google Drive</string>
+    <string name="settings_gdrive_account">Google Account</string>
+    <string name="settings_gdrive_account_summary">Select account for Google Drive sync</string>
+    <string name="settings_backup_now">Backup Now</string>
+    <string name="settings_backup_now_summary">Manually sync data to Google Drive</string>
+    <string name="settings_storage">Storage</string>
+    <string name="settings_clear_local_data">Clear Local Data</string>
+    <string name="settings_clear_local_data_summary">Delete all locally stored data</string>
+    <string name="settings_storage_usage">Storage Usage</string>
+    <string name="settings_storage_usage_summary">View app storage usage details</string>
+    
+    <!-- Backup Status Messages -->
+    <string name="backup_status_syncing">Syncing with Google Drive…</string>
+    <string name="backup_status_synced">All data backed up</string>
+    <string name="backup_status_error">Sync error occurred</string>
+    <string name="backup_status_disabled">Backup disabled</string>
+    <string name="backup_status_not_configured">Google Drive not configured</string>
+    
+    <!-- Dialog Messages -->
+    <string name="dialog_clear_data_title">Clear Local Data</string>
+    <string name="dialog_clear_data_message">Are you sure you want to delete all locally stored data? This action cannot be undone.</string>
+    <string name="dialog_backup_complete">Backup Complete</string>
+    <string name="dialog_backup_failed">Backup Failed</string>
+    <string name="dialog_restore_complete">Restore Complete</string>
+    <string name="dialog_restore_failed">Restore Failed</string>
+    
+    <!-- Error Messages -->
+    <string name="error_gdrive_auth">Failed to authenticate with Google Drive</string>
+    <string name="error_gdrive_connection">Could not connect to Google Drive</string>
+    <string name="error_storage_full">Device storage is full</string>
+    <string name="error_backup_in_progress">Backup already in progress</string>
+</resources> 
