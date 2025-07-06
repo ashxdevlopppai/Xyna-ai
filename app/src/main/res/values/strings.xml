@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Xyna</string>
+    <string name="accessibility_service_label">Xyna Accessibility Service</string>
+    <string name="accessibility_service_description">Allows Xyna to automate tasks by interacting with the UI on your behalf.</string>
+</resources>
